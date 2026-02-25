@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 
 const faqs = [
@@ -10,7 +8,7 @@ const faqs = [
 ]
 
 export default function FAQ() {
-  const [open, setOpen] = useState<number | null>(null)
+  const [open, setOpen] = useState(null)
 
   return (
     <section className="py-section px-4 md:px-8 bg-brand-light">
