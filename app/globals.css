@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(250, 247, 244);
+  color: rgb(28, 20, 16);
+}
+
+/* Typography Base Styles */
+h1 {
+  @apply font-display text-display-xl font-light tracking-tight;
+}
+
+h2 {
+  @apply font-display text-display-lg font-medium tracking-tight;
+}
+
+h3 {
+  @apply font-body text-xl font-semibold tracking-tight;
+}
+
+p {
+  @apply font-body text-base leading-relaxed;
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+button {
+  @apply transition-all duration-200;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors;
+}
